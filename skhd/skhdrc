@@ -1,0 +1,43 @@
+
+# 在 skhd 中，hyper 键通常表示为 "shift + cmd + alt + ctrl"
+
+# 切换桌面（Space）焦点
+# cmd + shift - 0 : yabai -m space --focus next || yabai -m space --focus first
+# cmd + shift - 9 : yabai -m space --focus prev || yabai -m space --focus last
+
+# 将窗口移动到其它桌面并跟随焦点
+# hyper + shift - 0 : window_id=$(yabai -m query --windows --window | jq '.id') && yabai -m window --space next && yabai -m space --focus next && yabai -m window --focus $window_id
+# hyper + shift - 9 : window_id=$(yabai -m query --windows --window | jq '.id') && yabai -m window --space prev && yabai -m space --focus prev && yabai -m window --focus $window_id
+
+# 切换窗口焦点（使用方向键移动焦点到相邻窗口）
+lcmd - tab : yabai -m window --focus next || yabai -m window --focus first
+
+# 窗口状态切换
+f11 : yabai -m window --toggle native-fullscreen
+
+# 切换当前窗口是否全屏填满当前空间
+cmd - return : yabai -m window --toggle zoom-fullscreen
+hyper - return : yabai -m window --toggle float --grid 16:32:4:2:24:12
+
+# 打开应用
+lcmd - e : open -na "WezTerm"
+rcmd - e : open -a "Emacs"
+
+# 使用 hyper + 数字键快速切换到特定桌面（需要与 yabai 配合使用）
+# lcmd - 1 : yabai -m space --focus 1
+# lcmd - 2 : yabai -m space --focus 2
+# lcmd - 3 : yabai -m space --focus 3
+# lcmd - 4 : yabai -m space --focus 4
+# lcmd - 5 : yabai -m space --focus 5
+
+# rcmd - 1 : yabai -m window --space 1 && yabai -m space --focus 1
+# rcmd - 2 : yabai -m window --space 2 && yabai -m space --focus 2
+# rcmd - 3 : yabai -m window --space 3 && yabai -m space --focus 3
+# rcmd - 4 : yabai -m window --space 4 && yabai -m space --focus 4
+# rcmd - 5 : yabai -m window --space 5 && yabai -m space --focus 5
+
+# 与指定方向的窗口交换位置
+hyper - left  : yabai -m window --swap west   # 与左侧窗口交换位置
+hyper - down  : yabai -m window --swap south  # 与下方窗口交换位置
+hyper - up    : yabai -m window --swap north  # 与上方窗口交换位置
+hyper - right : yabai -m window --swap east   # 与右侧窗口交换位置

@@ -1,0 +1,1389 @@
+ls -A /Library/LaunchDaemons
+sudo ls -A /Library/LaunchDaemons
+sync
+sudo ls -lhA /Library/LaunchDaemons
+ls -lO /Library/LaunchDaemons
+ls -lhA  /Library/Application\ Support
+cd /Library/Application\ Support
+launchctl list | grep karabiner
+brew install --cask app-cleaner
+brew uninstall --cask app-cleaner
+brew search macup
+ls -lhA  /Library/LaunchAgents
+ls -lhA  /Library/LaunchDaemons
+brew search latest
+brew install --cask latest
+brew search x
+brew search dozer
+brew install --cask dozer
+brew install --cask hiddenbar
+brew search codeium
+brew uninstall --cask andriod-file-transfer
+brew uninstall --cask android-file-transfer
+echo $TERM
+cat port3.py
+python3 port3.py
+conda search tushare
+pip search tushare
+pip3 search tushare
+pip install tushare
+pip show tushare
+conda list | grep tushare
+python3 Tushare.py
+conda search yfinance
+conda search openpyxl
+conda install -c conda-forge openpyxl
+python3 xls_to_csv.py
+curl -I https://formulae.brew.sh/api/formula.jws.json
+brew update --verbose
+brew update --debug
+python3 -i port_choice.py
+cd Data/
+cd Desktop/Python/video/PythonProgrammingLanguage/Data
+cat oops.txt
+cat relativity
+cat Data/missing.csv
+vim
+cd Desktop/Python/video/PythonProgrammingLanguage/
+python3 -i port3.py
+cd Desktop/video/PythonProgrammingLanguage/
+ipython
+ipython -i port3.py
+ls -lhA
+colorls
+ls --color
+ls -lhA --color
+colorls -lhA
+brew search colorls
+colorls -A
+ls -lhAG
+ls -lhAGF
+ls -lha
+ls -ha
+ls -h
+ls -a
+mkdir 11_Module
+cd 11_Module
+touch fast.py
+python3 -i fast.py
+touch lunch.py
+ipython -i lunch.py
+ipython lunch.py
+diff --color=auto
+gls -lhpvA --color=auto --group-directories-first
+gls --color=auto
+gls -pv --color=auto
+gls -pvA --color=auto --group-directories-first
+mkdir choices
+mv fast.py choices
+touch advice.py
+touch questions.py
+ipython -i questions.py
+python3 -i questions.py
+python3 -i lunch.py
+python3 lunch.y
+touch __init__.py
+mkdir dir_son
+mv questions.py dir_son
+cd ../choices/
+cd choices
+rm __init__.py
+rm __pycache__/
+rm -rf __pycache__/
+python3 dir_son/questions.py
+cd dir_son
+mv questions.py ../
+cat tk.csv
+rm tk.csv
+cat output.png
+open output.png
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/drliangjin/karabiner.d/HEAD/tools/install.sh)"
+cd Documents/
+mkdir MacOS_Setting
+cd MacOS_Setting
+touch Karabiner.org
+cat missing.csv
+cd Data
+python3 -i test.py
+lsA
+touch qanda.py
+cd practice
+touch letter.py
+brew search macs
+brew install --cask aldente
+brew search AIDente
+brew uninstall --cask aldente
+mkdir testing-org
+mv tasks.org testing-org/
+cd testing-org
+brew search ipython
+jupyter-lab
+touch test.py
+conda search matplotlib
+conda install -c conda-forge matplotlib
+conda update conda
+conda update --all -c conda-forge
+conda list | grep pandas
+cd Desktop/Introducing\ Python
+python3 test.py
+mkdir Python
+touch conda.org
+cd Desktop/LongZhen/
+cd Python
+touch Jupyter.org
+whereis pyright
+cd Documents/org
+mkdir Org_Babel
+jupyter notebook --version
+brew search zeromq
+brew search automake
+brew search autoconf
+brew search pkg-config
+brew search python
+brew install zeromq automake 
+brew install zeromq automake autoconf pkg-config
+conda search jupyter
+conda install -c conda-forge jupyter
+conda list | grep jupyter
+cd ~/.config/karabiner
+git add karabiner.json
+ls ~/.ssh/id_rsa
+cd 
+git remote set-url origin git@github.com:Longzhen1994/karabiner-config.git
+gpg --full-generate-key
+brew install notmuch
+notmuch count tag:unread and tag:inbox
+cat ~/.notmuch-config
+mkdir -p /Users/LongZhen/mail
+ping imap-mail.outlook.com
+mbsync Hotmail
+nslookup imap-mail.outlook.com
+brew search pinentry-mac
+brew install pinentry-mac
+echo "pinentry-program /opt/homebrew/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf\
+gpgconf --kill gpg-agent\
+gpgconf --launch gpg-agent
+export GPG_TTY=$(tty)
+gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/^machine imap-mail.outlook.com/{print $NF}'
+chmod 600 ~/.authinfo.gpg
+gpgconf --kill gpg-agent
+gpgconf --launch gpg-agent
+mbsync Hotmail\
+
+A001 LOGIN longzhen1994@hotmail.com "orzklitlvosbayih"
+openssl s_client -connect imap-mail.outlook.com:993
+# 1) å®ƒ©è£ƒ¥ GPGï¼ƒ¨åƒ¯¯é€ƒ©ï¼ƒ¬å¦‚æƒ¾ƒ¼ä½ƒ€è¦çƒ´¨åƒªƒ€å¯ƒ¦ .authinfo.gpgï¼ƒ©\
+brew install gnupg\
+\
+# 2) å®ƒ©è£ƒ¥ pinentry-macï¼ƒ¨åƒ¯¯é€ƒ©ï¼ƒ¬å¦‚æƒ¾ƒ¼è¦ Emacs/GPG äº¤äºƒ²è¾ƒ³åƒ¥¥å¯ƒ¦çƒ€ï¼ƒ©\
+brew install pinentry-mac\
+\
+# 3) å®ƒ©è£ƒ¥ isyncï¼ƒ¨æƒ¯ƒ°ä¾ƒ» mbsync åƒ±½ä»¤ï¼ƒ©\
+brew install isync\
+\
+# 4) å®ƒ©è£ƒ¥ notmuch\
+brew install notmuch\
+\
+# (åƒ¯¯é€ƒ©) å¦‚æƒ¾ƒ¼ä½ƒ€æƒ£³è®© Emacs çƒ´¨ msmtp æƒ½¥åƒ¯ƒ±é‚®ä»¶:\
+# brew install msmtp
+mkdir -p ~/Maildir
+mbsync -V Hotmail
+mbsync -V QQMail
+gpg -c ~/.authinfo
+gpg -d ~/.authinfo.gpg
+brew search msmtp
+brew install msmtp
+ls /opt/homebrew/etc/openssl@3/cert.pem
+chmod 600 ~/.msmtprc
+echo "Test mail from msmtp" | msmtp -a qq longzhen1994@hotmail.com
+notmuch setup
+notmuch new
+brew list notmuch | grep notmuch.el
+brew search deepseek
+brew uninstall emacs-plus@29
+brew install emacs-plus@30 --with-native-comp --with-savchenkovaleriy-big-sur-curvy-3d-icon
+brew link emacs-plus@30
+emacs --version
+ls /opt/homebrew/Cellar/emacs-plus@30/30.0.93/
+rm -f /Applications/Emacs.app\
+ln -s /opt/homebrew/Cellar/emacs-plus@30/30.0.93/Emacs.app /Applications/Emacs.app
+ls -l /Applications/Emacs.app
+brew search mu
+mbsync -a
+brew install mu
+which mu
+mu --version
+mu init --maildir=~/Maildir --my-address=767946768@qq.com\
+mu index
+cd Library
+cd fonts
+curl -X POST "https://api.deepseek.com/v1/chat/completions" \\
+-H "Content-Type: application/json" \\
+-H "Authorization: Bearer your-deepseek-api-key" \\
+-d '{"model": "deepseek-chat", "messages": [{"role": "user", "content": "Hello"}]}'
+brew install --cask ollama
+ollama delete huihui_ai/deepseek-r1-abliterated:8b
+ollama delete 
+brew uninstall --cask ollama
+ollama serve &
+ollama pull huihui_ai/deepseek-r1-abliterated:8b
+cd .ollama
+ollama pull deepseek-chat
+OLLAMA_NUM_PARALLEL=1 OLLAMA_DEBUG=1 LLAMA_DEBUG=1 ollama start
+ollama pull deepseek-r1:7b
+e
+cd Introducing\ Python
+mkdir function
+cd function
+touch function.org
+brew search ruff
+brew install ruff-lsp
+brew search font-iosevka-comfy
+brew search font-aporetic
+/Applications/Eudb_en.app/Contents/MacOS/Eudb_en --help
+/Applications/Eudb_en.app/Contents/MacOS/Eudb_en -n word
+/Applications/Eudb_en.app/Contents/MacOS/Eudb_en -n example
+brew search top
+brew uninstall btop
+brew uninstall glances
+brew install --cask font-lxgw-wenkai-mono-tc
+brew search font-sarasa-gothic
+brew search sarasa
+brew search font
+brew uninstall --cask font-iosevka font-iosevka-comfy font-sarasa-gothic
+git clone --depth 1 https://github.com/protesilaos/aporetic
+brew search --cask font-sarasa-gothic-hc
+brew install --cask font-sarasa-gothic
+brew search lxgw-wenkai
+brew install --cask font-lxgw-wenkai-gb
+ls -AFHlv
+cp ~/.zshrc ~/.zshrc.backup
+rm ~/.zshrc
+python
+cd document
+ls etc
+cd etc
+ls -lah
+python3 --vertion
+uninstall_oh_my_zsh
+chmod +w .zshrc
+conda env --list
+emacsclient
+python3 
+ollama run deepseek-r1:7b
+clear
+huihui_ai/deepseek-r1-abliterated:8b
+conda env
+brew search fast
+conda --help
+brew updat
+brew install basedpyright
+brew search pyright
+basedpyright --help
+ruff --version
+cd ~/.condarc
+cd LongZhen
+python3 lunch.py
+python lunch.py
+cd sources
+python3 questions.py
+brew updrade
+brew search jupyter
+conda -h
+open -a Emacs
+cd Desktop/Introducing\ Python/11_Module/
+brew install --cask qbittorrent
+LC_ALL=C pacman -V | tail -n3 | base32 | head -1
+iwctl
+brew install zsh-autosuggestions
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+brew install zsh-syntax-highlighting
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+brew zsh
+emacs --daemon
+btop
+glances
+cd document/
+gpg --keyserver-options auto-key-retrieve --verify archlinux-2025.02.01-x86_64.iso
+gpg --keyserver-options auto-key-retrieve --verify archlinux-2025.02.01-x86_64.iso.sig
+networksetup -listallhardwareports
+curl ifconfig.me
+curl cip.cc
+system_profiler SPNetworkDataType
+system_profiler SPAirPortDataType
+ioreg -l | grep "IO80211"
+git clone https://github.com/altercation/solarized.git
+ifconfig en0
+netstat -rn
+route -n get default
+diff
+echo 'export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"' >> ~/.zshrc
+data
+date
+lsa
+ls -G
+_ls
+brew search iproute2mac
+ip link show
+zsh --version
+ip route show
+ip -6 route show
+ss -at
+ifconfig
+ip help
+ip -help
+ip --help
+ip link
+ip addr show lo0
+ip addr
+ip addr show
+ip a
+ping 5 8.8.8.8
+ping -c 5 192.168.0.1
+ls --color=auto
+git clone https://github.com/dracula/terminal-app.git
+brew uninstall --cask macupdater
+brew uninstall --cask skim
+brew uninstall --cask hiddenbar
+brew uninstall --cask bartender
+brew uninstall --cask --force bartender
+brew uninstall --cask --force macupdater
+infocmp | grep -i f1
+brew info emacs-plus
+ls -lt $(brew --cellar) | head -20
+brew leaves
+brew info starship
+brew uninstall starship
+brew list > ~/Desktop/brew-packages.txt
+brew list --cask >> ~/Desktop/brew-packages-cask.txt
+brew list --cask
+brew search surge
+brew services list > ~/Desktop/brew-services.txt
+cat brew-services.txt
+brew search chatgpt
+cd Karabiner-Elements
+cd karabiner/karabiner.json
+brew install gh
+gh repo delete Longzhen1994/Python --confirm
+gh repo delete Longzhen1994/Python
+gh auth login
+gh auth refresh -h github.com -s delete_repo
+gh repo delete Longzhen1994/Python --yes
+gh repo delete Longzhen1994/karabiner-config --yes
+cd /Users/Longzhen/karabiner.d
+git init
+git add .
+git commit -m "Initial commit: Upload karabiner.json"
+git config --global user.name "Longzhen1994"
+git config --global user.email longzhen1994@hotmail.com
+git commit --amend --reset-author
+gh repo create karabiner-config --private
+git branch -M main
+git remote add origin https://github.com/Longzhen1994/karabiner-config.git
+git push -u origin main
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
+nano ~/.zshrc
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew help
+brew install zsh
+brew install zsh-autosuggestions zsh-syntax-highlighting
+brew tap d12frosted/emacs-plus
+brew install emacs-plus@30 --with-xwidgets --with-imagemagick --with-native-comp --with-savchenkovaleriy-big-sur-curvy-3d-icon --with-mailutils 
+brew install emacs-plus@30 --with-xwidgets --with-imagemagick --with-savchenkovaleriy-big-sur-curvy-3d-icon --with-mailutils
+brew services stop d12frosted/emacs-plus/emacs-plus@30
+brew services start d12frosted/emacs-plus/emacs-plus@30
+brew search appcleaner
+brew install --cask appcleaner
+brew install --cask downie flux karabiner-elements latest qbittorrent spotify stats utm docker
+rm -rf ~/.docker\
+rm -rf /usr/local/bin/docker\
+rm -rf /usr/local/bin/docker-compose\
+rm -rf /usr/local/bin/com.docker.cli\
+rm -rf /usr/local/lib/docker\
+rm -rf ~/Library/Containers/com.docker.docker\
+rm -rf ~/Library/Application\ Support/Docker\
+rm -rf ~/Library/Caches/com.docker.docker\
+rm -rf ~/Library/Preferences/com.docker.docker.plist
+sudo /Applications/Docker.app/Contents/MacOS/uninstall
+pkill Docker
+rm -rf /Applications/Docker.app
+rm -rf ~/.docker\
+rm -rf ~/Library/Application\ Support/Docker\
+rm -rf ~/Library/Caches/com.docker.docker\
+rm -rf ~/Library/Preferences/com.docker.docker.plist\
+rm -rf ~/Library/Logs/Docker\
+rm -rf ~/Library/Containers/com.docker.docker\
+rm -rf ~/Library/Containers/com.docker.helper
+rm -rf /usr/local/bin/docker\
+rm -rf /usr/local/bin/docker-compose\
+rm -rf /usr/local/bin/com.docker.cli\
+rm -rf /usr/local/lib/docker\
+rm -rf /opt/homebrew/bin/docker  # å¦‚æƒ¾ƒ¼æƒ¸¯ Apple Silicon Mac (M1/M2/M3)\
+rm -rf /opt/homebrew/bin/docker-compose
+rm -rf /opt/homebrew/bin/docker
+rm -rf /opt/homebrew/bin/docker-compose
+which docker\
+docker --version
+/usr/local/bin/docker --version
+sudo rm -f /usr/local/bin/docker\
+sudo rm -f /usr/local/bin/docker-compose\
+sudo rm -f /usr/local/bin/com.docker.cli\
+sudo rm -rf /usr/local/lib/docker
+ls -l /usr/local/bin/docker
+sudo rm -f /usr/local/bin/docker-credential-desktop
+ls -l /usr/local/bin/docker-credential-desktop
+sudo rm -f /usr/local/bin/docker*\
+sudo rm -f /usr/local/bin/com.docker.cli\
+sudo rm -rf /usr/local/lib/docker\
+sudo rm -rf ~/.docker\
+sudo rm -rf ~/Library/Application\ Support/Docker\
+sudo rm -rf ~/Library/Caches/com.docker.docker\
+sudo rm -rf ~/Library/Preferences/com.docker.docker.plist\
+sudo rm -rf ~/Library/Logs/Docker\
+sudo rm -rf ~/Library/Containers/com.docker.docker\
+sudo rm -rf ~/Library/Containers/com.docker.helper
+which docker\
+which docker-credential-desktop\
+docker --version
+sudo rm -f /usr/local/bin/hub-tool
+ls -l /usr/local/bin/hub-tool
+sudo rm -f /usr/local/bin/kubectl.docker
+brew install --cask docker
+brew install --cask permute
+brew install --cask wechat
+brew search font-lxgw-wenkai
+brew install --cask font-lxgw-wenkai-gb font-lxgw-wenkai-mono-tc font-sarasa-gothic iina
+brew install --cask iina
+bash Miniforge3-24.11.3-0-MacOSX-arm64.sh
+brew install fastfetch
+conda config --get channel-priority
+conda config --get channel_priority
+conda config --prepend channels conda-forge
+conda activate Emacs-condapip
+conda update -n base -c conda-forge conda
+conda remove -n Emacs-Condapip --all
+conda create -n Emacs-Condapip python
+mamba info
+mamba install pyright
+which pyright
+mamba clean --index-cache --lock --tarballs
+mamba shell init --shell zsh --root-prefix=~/.local/share/mamba
+mamba deactive
+conda info
+pyright --version
+mamba config --show
+mamba config --get channels
+mamba config list
+mamba config --remove channels defaults
+conda search ruff
+mamba config --show channels
+mamba config --show 
+conda config --remove channels defaults
+conda config --show channels
+mamba search ruff
+mamba install ruff
+mamba search basedpyright
+mamba search basedpyright-language
+mamba search basedpyright-langserver
+which baseedpyright-langserver
+mamba search jupyter
+mamba update pip
+ls -l
+cd ~/.emacs.d/
+rm -rf elpa
+emacs --batch -f package-refresh-contents -f package-install-selected-packages
+brew install cmake
+brew install cmake-docs
+brew install libgccjit
+brew install emacs-plus@30 --with-native-comp --with-xwidgets --with-imagemagick --with-savchenkovaleriy-big-sur-curvy-3d-icon --with-mailutils --with-dbus
+brew search libtool
+cmake --version
+cd ~/.emacs.d/elpa/
+cd vterm-20241218.331/
+make clean
+make
+ls -l /opt/homebrew/lib/libgccjit.so
+brew reinstall libgccjit
+cp ~/.emacs.d/ ~/.emacs.back/
+mv ~/.emacs.d/ ~/.emacs.back/
+brew search dbus
+brew info dbus
+cd emacs
+rm -rf dotfiles
+git clone https://github.com/protesilaos/dotfiles.git
+cd dotfiles
+cd emacs/
+brew search gcc
+git clone https://github.com/protesilaos/mandoura.git ~/.emacs.d/elpa/mandoura/
+git clone git@github.com:protesilaos/mandoura.git ~/.emacs.d/elpa/mandoura/
+brew search gls
+brew search coreutils
+brew search cmake
+ls --version
+autoload -U compinit
+compinit
+brew search autoreconf
+cd ~/.emacs.d/elpa/zmq-20241006.1857
+brew install automake
+autoreconf -i
+make EMACS=/opt/homebrew/Cellar/emacs-plus@30/30.1/Emacs.app/Contents/MacOS/Emacs
+brew search firefox
+brew install --cask firefox
+which gls
+alias ls
+gls
+brew search libgccjit
+echo $LIBRARY_PATH
+brew list | grep libgccjit
+gcc --version
+brew upgrade gcc
+rm -rf ~/.emacs.d/eln-cache/
+brew uninstall cmake
+brew uninstall cmake-docs
+brew uninstall jq
+brew search iproute
+brew uninstall jproute2mac
+brew uninstall iproute2mac
+brew uninstall coreutils
+brew info zsh-autosuggestions
+brew info libgccjit
+brew uninstall libgccjit
+brew info fastfetch
+brew automake
+brew deps m4
+brew uses m4
+brew info m4
+brew info ncurses
+brew uninstall m4
+brew info automake
+brew search texinfo
+brew install texinfo
+brew info zsh
+brew install coreutils
+brew install iproute2mac
+brew info iproute2mac
+cd..
+which zsh
+brew search jq
+brew install jq
+brew tap-info
+brew tap-info --json d12frosted/emacs-plus@30
+xcode-select --install
+brew doctor
+cd $(brew tap-info --json d12frosted/emacs-plus@30 | jq -r '.[0].path') && git switch BRANCH
+brew install emacs-plus@30 --with-xwidgets --with-imagemagick --with-savchenkovaleriy-big-sur-curvy-3d-icon --with-mailutils --with-dbus
+osascript -e 'tell application "Finder" to make alias file to posix file "/opt/homebrew/opt/emacs-plus@30/Emacs.app" at posix file "/Applications" with properties {name:"Emacs.app"}'
+brew services restart d12frosted/emacs-plus/emacs-plus@30
+brew uninstall emacs-plus@30
+brew search emcs
+conda info --envs
+mamba search python-lsp-server
+mamba install python-lsp-server
+find ~/.emacs.d/elpa/ -type d -name "package-lint*"
+cd /Users/LongZhen/.emacs.d/elpa//package-lint-flymake-20240923.931
+cd package-lint-20250224.1723
+lsl
+cd data
+brew search tradingview
+brew install --cask tradingview
+brew search oll
+ollama run huihui_ai/deepseek-r1-abliterated:8b
+brew search htop
+brew info htop
+brew info iftop
+brew search purge
+top -o mem
+brew install htop
+cd /usr/local/
+top
+pylsp --help
+ip address
+ip
+mamba search openai
+mamba install openai
+python3 deepseek_api.py
+brew uninstall --cask docker
+softwareupdate --install-rosetta
+docker info
+docker pull hello-world
+docker images
+docker run hello-world
+docker ps
+docker ps -a
+sudo mv app-4.38-mac-apple.asar /Applications/Docker.app/Contents/MacOS/Docker\ Desktop.app/Contents/Resources
+mv app-4.38-mac-apple.asar apple.asar
+sudo mv app-4.38-mac-apple.asar /Applications/Docker.app/Contents/MacOS/Docker\ Desktop.app/Contents/Resources/
+cd /Applications/Docker.app/Contents/MacOS/Docker\ Desktop.app/Contents/Resources/
+mv apple.asar app.asar
+cd ~/Downloads
+sudo mv app.asar /Applications/Docker.app/Contents/MacOS/Docker\ Desktop.app/Contents/Resources/
+docker pull eisai/chenyme-aavt
+brew install --cask buzz
+emacs --nw
+cd ~/Desktop/tools
+python3 download.py
+ollama run phi4-mini
+ollama rm huihui_ai/deepseek-r1-abliterated:8b
+ollama rm deepseek-r1:7b
+brew info FFMpeg
+ollama run qwq
+ollama help
+ollama -v
+cd Downloads
+git clone https://github.com/virattt/ai-hedge-fund.git
+cd ai-hedge-fund
+mamba create -n ai-hedge-fund
+mamba lis
+mamba install python
+conda --version
+mamba --version
+mamba install poetry
+curl -sSL https://install.python-poetry.org | python3 -
+poetry --version
+poetry
+poetry install
+cp .env.example .env
+conda activate ai-hedge-fund
+poetry run python src/main.py --ticker AAPL,MSFT,NVDA
+brew search cma
+brew install cmatrix
+cmatrix
+brew info orbstack
+brew install orbstack
+orb --help
+orb config
+orb config set
+hostname
+brew search miniforge
+brew info gmp
+brew info autoconf
+orb config show
+docker context use desktop-linux
+docker context use orbstack
+docker version
+orb help
+orb migrate docker
+ssh LongZhen@ubuntu@orb
+ssh ubuntu@orb
+chmod +rx OrbStack/
+cd OrbStack
+chmod +rx .
+orb sudo apt update
+orb 
+orb sudo emacs
+orb sudo fastfetch
+brew search xsltproc
+brew search xslt
+xsltproc --version
+cd Documents
+xsltproc transform.xsl æ²ªæ·±Aè‚ƒ-èµƒ¤éƒ§ƒ±æµåƒ°ƒ±.xlsx > output.org
+brew info csvkit
+brew install csvkit
+in2csv æ²ªæ·±Aè‚ƒ-èµƒ¤éƒ§ƒ±æµåƒ°ƒ±.xlsx > output.csv
+softwareupdate --install-rosetta --agree-to-license
+mamba create -n akshare-condapip python
+mamba search akshare
+conda search akshare
+mamba search pandasdmx
+mamba install pandasdmx
+pip install akshare --upgrade
+mamba install basedpyright
+mamba install jupyter
+in2csv åƒ°ƒ¤çº§åƒ°ƒ¤ç±»å­¦åƒ®ƒ¦æƒµƒ¹è‚²æ¯ƒµä¸ƒºçƒ´ƒ¿æƒµ°.numbers åƒ°ƒ¤çº§åƒ°ƒ¤ç±»å­¦åƒ®ƒ¦æƒµƒ¹è‚²æ¯ƒµä¸ƒºçƒ´ƒ¿æƒµ°.csv
+in2csv åƒ°ƒ¤çº§åƒ°ƒ¤ç±»å­¦åƒ®ƒ¦æƒµƒ¹è‚²æ¯ƒµä¸ƒºçƒ´ƒ¿æƒµ°.numbers > åƒ°ƒ¤çº§åƒ°ƒ¤ç±»å­¦åƒ®ƒ¦æƒµƒ¹è‚²æ¯ƒµä¸ƒºçƒ´ƒ¿æƒµ°.csv
+htop
+brew search cap
+brew search kap
+brew install --cask kap
+brew uninstall --cask kap
+brew search obs
+brew info isync
+brew info notmuch
+brew install isync notmuch
+brew services start isync
+security add-internet-password -a emacs9490@gmail.com -s imap.gmail.com -w 'James19940202'
+security add-internet-password -a emacs9490@gmail.com -s imap.gmail.com -w 'xgug tqek yupb nszm'
+security find-internet-password -gs imap.gmail.com -w
+security add-internet-password -a emacs9490@gmail.com -s imap.gmail.com -w 'xgugtqekyupbnszm'
+openssl s_client -connect imap.gmail.com:993
+openssl s_client -servername imap.gmail.com -connect imap.gmail.com:993
+openssl version
+security add-internet-password -a emacs9490@gmail.com -s imap.gmail.com -w 'xgugtqekyupbnszm' -U
+ifconfig imap.gmail.com 993
+mbsync
+brew search telnet
+brew install telnet
+telnet imap-mail.outlook.com 993
+host imap.gmail.com
+telnet imap.gmail.com 993
+ping 38.207.190.189
+ls --color-auto
+ls --help
+ls -alF
+ls -A
+grep
+ls -CF
+ls Desktop/
+orb
+python3 -c "import uuid; print(uuid.uuid4())"
+ping 108.61.207.76
+ssh root@38.207.190.189
+uuidgen
+ping -c 5 www.emacs9490.top
+ping -c 5 108.61.207.76
+ping myemacs.xyz:11223
+ping myemacs.xyz
+brew install v2ray
+v2ray --version
+mkdir -p ~/.v2ray/
+v2ray --help
+v2ray version
+brew --prefix v2ray
+cd /opt/homebrew/opt/v2ray
+ping -c 5 emacs9490.top
+ping -c 5 baidu.com
+which v2ray
+cd /opt/homebrew/bin
+./v2ray -config ~/.v2ray/config.json
+ssh root@108.61.207.76
+/opt/homebrew/opt/v2ray/bin/v2ray run -config ~/.v2ray/config.json
+v2ray 
+v2ray run
+v2ray run ~/.v2ray/config.json
+brew info v2ray
+brew info go
+mamba install nodejs npm
+mamba install nodejs
+mamba install -c conda-forge nodejs
+npm --version
+which vscode-json-languageserver
+npm install npm@11.2.0
+mamba
+npm install vscode-json-languageserver
+vscode-json-languageserver 
+npm install -g vscode-json-languageserver
+which vscode-json-languageserver 
+node -v
+npx -v
+unzip --version
+cd Documents/è‚ƒç¥¨/Demo
+unzip Demo_Python.zip 
+cd Demo_Python
+cd python3
+mamba activate ai-hedge-fund
+mamba deactiveta
+brew install node
+brew info node
+rm '#.zshrc#'
+export LANG=en_US.UTF-8
+git stauts
+git status
+rm -rf ~/Desktop/protesilaos
+brew search jedi
+mamba activate akshare-condapip
+mamba remove basedpyright
+mamba update -n base -c conda-forge mamba conda
+mamba update --all
+mamba search jedi
+mamba search jedi-language-server
+mamba install -c conda-forge pyright
+mamba search pyright
+mamba install -c conda-forge jedi-language-server
+mamba remove pyright
+mamba remove jedi-language-server
+mamba remove jedi
+conda install conda-forge::basedpyright
+brew search poppler
+brew info poppler
+brew info emacs
+brew info --cask emacs
+brew install --cask emacs
+emacs --debug-init
+brew search Merriweather
+brew install --cask font-merriweather
+brew search vterm
+ollama show llama3.1
+ollama push qwq:latest
+pip3 
+pip3 --list
+pip3 --version
+conda remove -n ai-hedge-fund --all
+mamba remove -n akshare-condapip --all
+conda remove -n akshare-condapip --all
+brew info python@3.13
+which python3 
+mamba create -n Aider-pip python
+python --version
+pip --version
+python -m pip install aider-install
+aider-install
+aider
+brew search git
+brew info git
+brew install git
+echo $PATH
+hash -r
+pip install 'aider-chat[help]' --extra-index-url https://download.pytorch.org/whl/cpu
+python -m pip install --upgrade --upgrade-strategy only-if-needed 'aider-chat[help]' --extra-index-url https://download.pytorch.org/whl/cpu\
+
+pip install numpy --upgrade
+python -m pip install --upgrade --upgrade-strategy only-if-needed 'aider-chat[help]' --extra-index-url https://download.pytorch.org/whl/cpu
+pip
+pip uninstall numpy
+pip install https://files.pythonhosted.org/packages/84/c7/b7f58df91c8cb223a90a4d6cb7b61404136e372970c1d46da59cb7110a9b/numpy-1.24.3-cp312-cp312-macosx_11_0_arm64.whl
+cd ~/.local/bin
+aider --model deepseek --api-key deepseek=sk-614c5f6aded84a31b1afb220dd3dfb10
+pip list
+which aider
+csrutil status
+brew install koekeishiya/formulae/yabai
+echo "$(whoami) ALL=(root) NOPASSWD: sha256:$(shasum -a 256 $(which yabai) | cut -d " " -f 1) $(which yabai) --load-sa" | sudo tee /private/etc/sudoers.d/yabai
+mkdir ~/.config/yabai/
+cp /opt/homebrew/opt/yabai/share/yabai/examples/yabairc ~/.config/yabai/yabairc
+yabai --check-sa
+sudo nvram boot-args=-arm64e_preview_abi
+nvram boot-args
+pgrep yabai
+man yabai
+touch yabairc
+chmod +x yabairc
+yabai --load-sa
+sudo yabai --load-sa
+yabai -m query --windows
+emacs -Q
+brew uninstall --cask emacs
+brew tap railwaycat/emacsmacport
+brew install --cask railwaycat/emacsmacport/emacs-mac
+brew search emacs
+exot
+git clone https://github.com/drliangjin/.hammerspoon.d.git && ln -sf ~/.hammerspoon.d ~/.hammerspoon
+brew install koekeishiya/formulae/skhd
+mkdir skhd
+cd yabai
+brew search hammerspoon
+brew install --cask hammerspoon
+brew search lua
+brew info lua
+brew install lua
+brew info luarocks
+brew install luarocks
+lua -v
+chmod -R u+rw ~/.hammerspoon
+rm -rf ~/Library/Caches/com.hammerspoon.Hammerspoon/
+brew info hammerspoon
+brew uninstall --cask hammerspoon
+python3
+cp /opt/homebrew/opt/skhd/share/skhd/examples/skhdrc skhdrc
+rm -rf protesilaos
+git clone https://github.com/protesilaos/dotfiles.git ~/Desktop/protesilaos
+fastfetch
+brew search jetbrains
+brew install --cask font-jetbrains-mono
+brew search aporetic
+brew install --cask font-aporetic
+brew uninstall --cask buzz
+brew update
+brew upgrade
+rm -f ~/.zcompdump\
+compinit
+exec zsh
+brew services list
+brew uninstall v2ray
+rm -rf /opt/homebrew/etc/v2ray
+rm -rf /opt/homebrew/etc/v2ray/config.json
+brew search v2ray
+brew search unbound
+brew service
+brew services
+brew search zsh
+brew shellenv\
+brew install zsh-completions
+sudo chmod go-w /opt/homebrew/share\
+sudo chmod -R go-w /opt/homebrew/share/zsh
+rm -f ~/.zcompdump\
+exec zsh
+mkdir -p /opt/homebrew/share/zsh/site-functions\
+ln -s /opt/homebrew/Library/Contributions/brew_zsh_completion.zsh /opt/homebrew/share/zsh/site-functions/_brew_services
+ls -la /opt/homebrew/share/zsh/site-functions/_brew_services
+rm /opt/homebrew/share/zsh/site-functions/_brew_services\
+ln -s "$(brew --prefix)/Library/Contributions/brew_zsh_completion.zsh" /opt/homebrew/share/zsh/site-functions/_brew_services
+ln -s "$(brew --prefix)/Library/Taps/homebrew/homebrew-services/completions/zsh/_brew_services" /opt/homebrew/share/zsh/site-functions/_brew_services
+brew tap homebrew/services
+rm -f ~/.zcompdump; compinit
+rm -f /opt/homebrew/share/zsh/site-functions/_brew_services\
+ls -la /opt/homebrew/share/zsh/site-functions/_brew_services
+rm -f /opt/homebrew/share/zsh/site-functions/_brew_services\
+ll /opt/homebrew/share/zsh/site-functions/_brew_services
+rm -f /opt/homebrew/share/zsh/site-functions/_brew_services\
+la /opt/homebrew/share/zsh/site-functions/_brew_services
+find /opt/homebrew -name "_brew_services" -o -name "brew_services"
+touch /opt/homebrew/share/zsh/site-functions/_brew_services
+tree
+brew search conda
+brew search mamba
+mamba create --clone Aider-pip -n Aider-pip-new -p ~/.local/share/conda/envs/Aider-pip
+mamba 
+conda init
+mamba run --help
+mamba activate Aider-pip
+mamba activate base
+conda env export > ~/Desktop/Emacs-Condapip.yml
+cat ~/Desktop/Emacs-Condapip.yml
+rm -rf ~/miniforge3/
+rm -rf ~/.condarc ~/.mambarc ~/.local/share/conda ~/.local/share/mamba
+rm -rf conda
+cd ~/.cache
+rm -rf conda starship 
+# Use this first command to see what rc files will be updated\
+conda init --reverse --dry-run\
+# Use this next command to take action on the rc files listed above\
+conda init --reverse\
+# Temporarily IGNORE the shell message\
+#       'For changes to take effect, close and re-open your current shell.',\
+# and CLOSE THE SHELL ONLY AFTER the 3rd step below is completed.
+curl -LO https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh
+mkdir ~/.config/conda/
+touch condarc
+bash Miniforge3-MacOSX-arm64.sh -b -u -p ~/.local/share/miniforge3
+unset MAMBA_NO_RC\
+unset CONDARC\
+unset CONDA_PREFIX\
+unset MAMBA_ROOT_PREFIX\
+unset CONDA_EXE\
+unset MAMBA_EXE
+rm -rf ~/miniforge3 ~/.condarc ~/.mambarc ~/.local/share/miniforge3 ~/.local/share/conda ~/.local/share/mamba ~/.config/conda ~/.config/mamba
+bash Miniforge3-MacOSX-arm64.sh -b -p ~/.local/share/miniforge3
+~/.local/share/miniforge3/bin/conda init zsh\
+~/.local/share/miniforge3/bin/mamba init zsh
+source ~/.zshrc
+source ~/.zshenv
+source ~/.config/zsh/.zshrc
+rm -rf Miniforge3-MacOSX-arm64.sh
+conda create -n Emacs-Condapip python=3.12
+mamba activate Emacs-Condapip
+cd Desktop/
+conda deactivate
+mamba remove -n Aider-pip --all
+mamba remove -n Emacs-Condapip --all
+rm -rf .conda/
+mamba create -n Emacs-Condapip
+mv ~/.conda ~/.local/share/conda-environments
+ln -s ~/.local/share/conda-environments ~/.conda
+mamba create -n Aider-pip python=3.12
+cd ~/.conda
+cat environments.txt
+which ls
+which python
+which conda
+mamba env update --file Emacs-Condapip.yml --prune
+mamba list
+conda
+cd ~/.config/conda/
+cd zsh
+conda activate Emacs-Condapip
+conda 
+jupyter --version
+brew search mbsyncrc
+brew search mbsy
+brew uninstall isync\
+rm -rf ~/Maildir ~/mail ~/.mbsyncrc
+brew search node
+rustup self uninstall
+rm -rf ~/.cargo\
+rm -rf ~/.rustup
+brew search rust
+brew search docker
+rm -rf ~/.docker\
+rm -rf ~/Library/Containers/com.docker.docker\
+rm -rf ~/Library/Application\ Support/Docker\ Desktop\
+rm -rf ~/Library/Preferences/com.docker.docker.plist\
+rm -rf ~/Library/Caches/com.docker.docker\
+rm -rf ~/Library/Logs/Docker\ Desktop
+ls 
+rm -rf docker
+ls /Library/LaunchAgents/
+sudo ls /Library/LaunchAgents/
+sudo ls /Library/LaunchDaemons/
+rm ~/Library/LaunchAgents/com.docker.*.plist\
+rm /Library/LaunchAgents/com.baidu.*.plist\
+rm /Library/LaunchDaemons/com.baidu.*.plist
+ls ~/Library/LaunchAgents/
+rm com.google.GoogleUpdater.wake.plist
+rm com.google.keystone.agent.plist
+rm com.google.keystone.xpcservice.plist
+rm com.valvesoftware.steamclean.plist
+rm homebrew.mxcl.isync.plist
+rm ls
+rm netdisk_service.plist
+cd /Library/LaunchAgents
+sudo ls /Library/LaunchAgents
+sudo ls /Library/LaunchDaemons
+rm com.crystalidea.macsfancontrol.smcwrite.plist
+sudo rm com.docker.socket.plist
+launchctl list | grep -i baidu
+find ~/Library/LaunchAgents /Library/LaunchAgents /Library/LaunchDaemons -iname "*baidu*"
+# æ£€æƒ¿¥åºƒ´çƒ´¨æƒ´¯æƒ¬çƒ»®å½ƒµ\
+ls ~/Library/Application\ Support/ | grep -i baidu\
+ls /Library/Application\ Support/ | grep -i baidu\
+\
+# æ£€æƒ¿¥ç¼ƒ³å­ƒ¸çƒ»®å½ƒµ\
+ls ~/Library/Caches/ | grep -i baidu\
+ls /Library/Caches/ | grep -i baidu\
+\
+# æ£€æƒ¿¥åƒ¯å¥½è®¾ç½®çƒ»®å½ƒµ\
+ls ~/Library/Preferences/ | grep -i baidu
+ls ~/Library/Application\ Support/ | grep -i baidu\
+ls /Library/Application\ Support/ | grep -i baidu\
+ls ~/Library/Caches/ | grep -i baidu\
+ls /Library/Caches/ | grep -i baidu\
+ls ~/Library/Preferences/ | grep -i baidu
+brew search chrome
+cd /Library/LaunchDaemons
+rm com.nssurge.surge-mac.helper.plist
+sudo rm com.nssurge.surge-mac.helper.plist
+sudo rm dev.orbstack.OrbStack.privhelper.plist
+sudo cd /Library/LaunchAgents
+cd ~/Library/LaunchAgents
+cd skhd
+pip3 list
+python3 --version
+which pip3
+conda remove -n Aider-pip --all
+rm -rf ~/.cache/matplotlib\
+rm -rf ~/.config/matplotlib
+brew search gnupg
+python3 -c "import matplotlib"
+mv ~/.gnupg ~/.config/gnupg
+chmod 700 ~/.config/gnupg
+mv ~/.config/gnupg ~/.local/share/gnupg/
+cd gnupg
+gpg --list-keys
+rm ~/.ollama ~/.local/share/ollama
+ollama show
+ollama pull llama3.1:8b-instruct-q8_0
+ls ~/.local/share
+ls ~/.config/
+mv ~/.ollama/ollama ~/.ollama
+ls ~/.ollama
+mv ~/.ollama ~/.local/share/ollama
+ls ~/.local/share/ollama/
+~/.local/share/ollama/
+lsla ~/.local/share/ollama
+mv ~/.local/share/ollama ~/.ollama
+cd ~/.local/share
+mkdir -p ollama
+cd ollama
+mv ~/.ollama/models ~/.local/share/ollama/models
+cd models
+source ~/.config/zsh/.zprofile
+mv ~/.local/share/ollama/models ~/.ollama/models
+lsla ~/.ollama
+cd ~/.local/share/ollama
+mkdir -p models
+brew uninstall ollama
+brew search ollama
+rm -rf ollama
+brew search skhd
+brew cleanup
+brew info emacs-plus@30
+brew uninstall mailutils
+brew search mailutils
+which yabai
+which skhd
+skhd --version
+skhd --stop-service
+skhd
+brew info skhd
+brew info yabai
+cd ~/.config/skhd
+brew services stop skhd
+pkill skhd
+kill -9 5037
+kill -9 6338
+sudo find /tmp -name "*skhd*" -delete\
+sudo find /var/run -name "*skhd*" -delete
+skhd -c ~/.config/skhd/skhdrc
+launchctl unload ~/Library/LaunchAgents/com.koekeishiya.skhd.plist
+sudo find /name "*skhd*.pid" -type f 2>/dev/null
+cat $(which skhd) | grep -i pid
+skhd --help
+cp ~/Library/LaunchAgents/com.koekeishiya.skhd.plist ~/Library/LaunchAgents/com.koekeishiya.skhd.plist.bak
+plutil -convert xml1 -o - ~/Library/LaunchAgents/com.koekeishiya.skhd.plist | sed 's|<array>|<array>\n        <string>-c</string>\n        <string>~/.config/skhd/skhdrc</string>|' > /tmp/skhd.plist\
+mv /tmp/skhd.plist ~/Library/LaunchAgents/com.koekeishiya.skhd.plist
+launchctl load ~/Library/LaunchAgents/com.koekeishiya.skhd.plist
+rm ~/Library/LaunchAgents/com.koekeishiya.skhd.plist.bak
+ls ~/Library/LaunchAgents | grep skhd
+brew services start skhd
+skhd --start-service
+ps aux | grep skhd
+cd cache
+conda env list
+mamba create -n whisper python=3.9.9 pytorch 1.10.1
+mamba create -n whisper python=3.9.9 pytorch=1.10.1
+mamba env list
+mamba activate whisper
+conda list
+conda search openai-whisper
+which pip
+pip install -U openai-whisper
+brew info ffmpeg
+brew search ffmpeg
+brew install ffmpeg
+whisper --help
+which whisper
+cd ~/Downloads/
+cd .DownieTemporaryFolder
+whisper 'Emacs- introduction to MAGIT.mp4' --model turbo
+whisper 'Emacs- introduction to MAGIT.mp4' --model base
+lslsa
+mamba deactivate
+ssh -T git@hithub.com
+ls -al ~/.ssh
+cd ~/.ssh/
+cd Longzhen1994
+cat ~/.ssh/id_rsa_l4t_github.pub
+ssh-keygen -t ed25519 -C "longzhen1994@hotmail.com"
+ls ~/.ssh
+cd ~/Documents/notes
+git remote remove origin
+git remote add origin git@github.com:Longzhen1994/emacs-notes.git
+Hi Longzhen1994! You've successfully authenticated, but GitHub does not provide shell access.
+cat ~/.ssh/id_ed25519.pub
+eval "$(ssh-agent -s)"\
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+git config --global --list
+git remote -v
+git push -u origin master
+ssh-add -l
+ssh -T git@github.com
+ls -la ~/.ssh
+cd ~/.config/
+cp -R /Users/LongZhen/karabiner.d ~/Desktop/backup-karabiner
+rm ~/.config/karabiner
+mkdir ~/.config/karabiner
+cp -R /Users/LongZhen/karabiner.d/* ~/.config/karabiner/
+cd karabiner
+rm -rf karabiner.d/
+echo "$(whoami) ALL=(root) NOPASSWD: sha256:$(shasum -a 256 $(which yabai) | cut -d " " -f 1) $(which yabai) --load-sa"
+sudo visudo -f /private/etc/sudoers.d/yabai
+skhd --reload
+brew search stats
+brew info stats
+brew uninstall --cask stats
+mkdir -p ~/.config/ollama\
+mkdir -p ~/.local/share/ollama\
+mkdir -p ~/.cache/ollama
+echo "PORT=11434" > ~/.config/ollama/config
+ollama run llama3.1:8b-instruct-q8_0
+rm -rf ~/.ollama
+echo $OLLAMA_MODELS_DIR
+ollama --help
+ollama --version
+ollama run phi4-mini --verbose
+brew install ollama
+export OLLAMA_MODELS="$HOME/.local/share/ollama/models"\
+export OLLAMA_HOME="$HOME/.config/ollama"
+mkdir -p "$HOME/.local/share/ollama/models"\
+mkdir -p "$HOME/.config/ollama"
+cd ~/.ollama
+tree ~/.ollama
+ollama run gemma3:4b-it-q8_0
+lsls ~/.conda
+lsla ~/.conda
+lsla ~/.conda/
+lsla ~/.ipython
+brew info nvim
+brew info bat
+brew search neovim
+brew install neovim
+nvim -c 'quit'
+which nvim
+nvim 
+ls -la $XDG_CONFIG_HOME/nvim
+echo $XDG_CONFIG_HOME
+mkdir -p $XDG_CONFIG_HOME/nvim\
+touch $XDG_CONFIG_HOME/nvim/init.vim\
+nvim
+cd ~/.config/nvim
+brew install bat
+bat --config-file
+bat ~/.zshenv
+mkdir -p ~/.config/zsh\
+mkdir -p ~/.local/state/zsh\
+mkdir -p ~/.cache/zsh
+bat ~/.config/zsh/.zshrc
+emacs
+emacsclient -t
+brew info karabiner-elements
+lsla ~/Library
+cd Library/LaunchAgents
+cd Preference
+cd Preferences
+yabai --help
+brew search notmuch
+brew search isync
+brew install isync
+mkdir isync
+mkdir -p ~/.config/isync/mbsyncrc/
+man mbsync
+cd ~/.config/isync
+rm -rf mbsyncrc
+mkdir -p ~/Mail/Gmail
+ls ~/.config
+brew search openssl
+brew info openssl@3
+mbsync gmail
+mbsync -c "$XDG_CONFIG_HOME"/isync/mbsyncrc
+ls /opt/homebrew/etc/openssl@3/certs/ca-bundle.crt
+ls /opt/homebrew/etc/openssl@3
+ls ~/.config/isync
+chmod 600 ~/.config/isync/mbsyncrc
+lsla ~/.config/isync
+mbsync -V gmail
+mbsync -c ~/.config/isync/mbsyncrc -V gmail
+ping imap.gmail.com
+ping google.com
+ping -h
+ping -c 5 8.8.8.8
+ping -c 5 google.com
+ping -c 5 imap.gmail.com
+mbsync -h
+lsla /opt/homebrew/etc/openssl@3/cert
+lsla /opt/homebrew/etc/openssl@3/certs
+lsla /opt/homebrew/etc/openssl@3
+mbsync -c ~/.config/isync/mbsyncrc gmail
+cd ~/Mail/QQ
+lsla /opt/homebrew/Cellar/emacs-plus@30/30.1/share/emacs/30.1/site-lisp/
+nix-shell -p nix-info --run "nix-info -m"\
+
+nix --version
+neofetch
+nix-shell -h
+which nix
+which nix-shell
+lsla /nix/var/nix/profiles/default/bin/
+nix-shell -p nix-info --run "nix-info -m"
+cowsay no can do
+nix-shell -p cowsay lolcat
+nix-shell -p cowsay --run "cowsay Nix"
+nix-shell -p hello --run hello
+nix-shell -p git emacs nodejs
+nix-shell -p git --run "git --version" --pure -I nixpkgs=https://github.com/NixOS/nixpkgs/tarball/2a601aafdc5605a5133a2ca506a34a3a73377247
+which git
+man nix-shell
+nix-collect-garbage
+cd Desktop
+git --version
+nix-shell
+ollama run llama3.1_8B_Q4_Chinese_Chat 
+curl http://localhost:11434/api/generate -d'{
+curl http://localhost:11434/api/generate -d'{\\
+"model": "phi4-mini:3.8b-q8_0",\\
+"prompt":"Why is the sky blue?"\\
+}'
+curl http://localhost:11434/api/generate -d '{\
+  "model": "phi4-mini:3.8b-q8_0",\
+  "prompt":"Why is the sky blue?"\
+}'
+GET /api/tags
+curl http://localhost:11434/api/show -d'{\
+"model": "phi4-mini:3.8b-q8_0"\
+}'
+ollama server
+ollama stop
+brew services stop ollama
+ollama -h
+brew services start ollama
+launchctl setenv OLLAMA_HOST "0.0.0.0:11434"
+OLLAMA_ORIGINS=chrome-extension://*,moz-extension://*,safari-web-extension://* ollama serve
+brew search lmstudio
+brew info lm-studio
+brew -h
+brew install cask lm-studio
+brew update && brew upgrade
+brew uninstall --cask lm-studio
+brew install --cask lm-studio
+brew search Eudic
+brew info Eudic
+ls /System/Library/Fonts
+ls /Library/Fonts
+ls ~/Library/Fonts
+ls /opt/local
+ls /opt/Applications/MacPorts
+../..
+cd opt
+cd homebrew
+cd /usr/local/bin
+ls -la
+la
+which python3
+cd ..
+..
+cd /opt/homebrew/bin/
+ll
+cd /System/Library/Fonts
+cd
+cd /System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreText.framework/Resources/
+open /
+open .
+ollama 
+emacs -nw
+brew lis
+brew list
+brew unisntall --cask eudic
+brew uninstall --cask eudic
+brew search eudic
+brew install --cask eudic
+skhd --restart-service
+ls /Applications/
+osascript -e 'id of app "Terminal"'
+open -a Terminal
+skhd -V
+brew services restart skhd
+ollama
+ollama list
+ollama show phi4-mini:3.8b-q8_0
+ollama serve
+ollama phi4-mini:3.8b-q8_0
+ollama run phi4-mini:3.8b-q8_0
+ollama os
+launchctl setenv OLLAMA_ORIGINS "*"
+launchctl setenv OLLAMA_HOST "0.0.0.0"
+ollama ps
+brew info ollama
+brew services restart ollama
+brew services restart yabai
+yabai --restart-service
+yabai -m query --windows --window
+yabai --stop-service
+yabai --start-service
+brew search Lulu
+brew info Lulu
+git clone https://github.com/sarkrui/Eudic-for-Mac/releases/download/1.0.1/Oxford_mdict.zip ~/Downloads
+git clone https://github.com/sarkrui/Eudic-for-Mac/releases/download/1.0.1/Oxford_mdict.zip ~/Downloads/
+git clone https://github.com/sarkrui/Eudic-for-Mac/releases/download/1.0.1/Oxford_mdict.zip ~/Downloads/dictionary/
+which terminal
+open Terminal
+open Emacs
+brew info wezterm
+brew install --cask wezterm
+skhd -v
+exit
+git clone https://github.com/protesilaos/dotfiles.git ~/Desktop/dotfiles
+lsla ~/.config/
+rm -rf wezterm
+cd ~/.config
+mkdir -p wezterm/
+cd wezterm
+touch wezterm.lua
+ls
+emacs -nw wezterm.lua
+cd ~/.config/wezterm
+cd wezterm-modus-theme
+cd wezterm-modus-themes
+lsla
+cd colors
+pwd
+brew uninstall --cask wezterm
+brew search wezterm
+brew install --cask wezterm@nightly

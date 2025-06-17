@@ -1,0 +1,248 @@
+# 将此配置复制到 ~/.config/.aerospace.toml
+# 之后，您可以根据个人喜好编辑 ~/.config/.aerospace.toml
+
+# 您可以使用它来添加在 macOS 用户会话登录后运行的命令。
+# 要使 'after-login-command' 生效，'start-at-login' 需要设置为 'true'
+# 可用命令: https://nikitabobko.github.io/AeroSpace/commands
+after-login-command = []
+
+# 您可以使用它来添加在 AeroSpace 启动后运行的命令。
+# 'after-startup-command' 在 'after-login-command' 之后运行
+# 可用命令: https://nikitabobko.github.io/AeroSpace/commands
+after-startup-command = []
+
+# 在登录时启动 AeroSpace
+start-at-login = true
+
+# 规范化。参见: https://nikitabobko.github.io/AeroSpace/guide#normalization
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+
+# 现在，您可以通过按住 ctrl + cmd 并拖动窗口的任何部分（不一定是窗口标题）来移动窗口
+# defaults write -g NSWindowShouldDragOnGesture -bool true
+
+# 'accordion-padding' 指定手风琴填充的大小
+# 您可以设置为 0 以禁用填充功能
+accordion-padding = 30
+
+# 可能的值: tiles|accordion
+default-root-container-layout = 'tiles'
+
+# 可能的值: horizontal|vertical|auto
+# 'auto' 意味着: 宽屏幕 (宽度大于高度) 获得水平方向,
+#               高屏幕 (高度大于宽度) 获得垂直方向
+default-root-container-orientation = 'auto'
+
+# 通过切换此标志，可有效关闭 macOS 的“隐藏应用”（cmd-h）功能
+# 如果您未使用此 macOS 功能，但误按了 cmd-h 或 cmd-alt-h 快捷键，此方法会很有帮助
+automatically-unhide-macos-hidden-apps = true
+
+# 可能的值: (qwerty|dvorak)
+key-mapping.preset = 'qwerty'
+
+# 当焦点显示器改变时，鼠标跟随焦点
+# 如果您不喜欢此行为，请从您的配置中删除它
+on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+
+# 窗口之间的间隙 (inner-*) 和显示器边缘之间的间隙 (outer-*)。
+[gaps]
+inner.horizontal = 8
+inner.vertical =   8
+outer.left =       8
+outer.bottom =     8
+outer.top =        8
+outer.right =      8
+
+[mode.main.binding]
+# 所有可能的按键:
+# - 字母。        a, b, c, ..., z
+# - 数字。        0, 1, 2, ..., 9
+# - 小键盘数字。  keypad0, keypad1, keypad2, ..., keypad9
+# - F 键。        f1, f2, ..., f20
+# - 特殊键。      minus, equal, period, comma, slash, backslash, quote, semicolon, backtick,
+#                leftSquareBracket, rightSquareBracket, space, enter, esc, backspace, tab
+# - 小键盘特殊键。keypadClear, keypadDecimalMark, keypadDivide, keypadEnter, keypadEqual,
+#                keypadMinus, keypadMultiply, keypadPlus
+# - 箭头。        left, down, up, right
+
+# 所有可能的修饰符: cmd, alt, ctrl, shift
+
+# 将 AeroSpace 切换到名为 service 的绑定模式。在该模式下，特定按键被重新定义以执行特定操作。
+f18 = 'mode service'  # option
+f19 = 'mode windows'  # command
+
+f11 = 'macos-native-fullscreen'
+
+# # 切换到下一个非空工作区
+# cmd-ctrl-alt-shift-n = 'exec-and-forget aerospace list-workspaces --empty no --monitor all | aerospace workspace --wrap-around next'
+# cmd-ctrl-alt-shift-p  = 'exec-and-forget aerospace list-workspaces --empty no --monitor all | aerospace workspace --wrap-around prev'
+#
+# cmd-ctrl-alt-shift-h = 'focus --boundaries-action wrap-around-the-workspace left'
+# cmd-ctrl-alt-shift-j = 'focus --boundaries-action wrap-around-the-workspace down'
+# cmd-ctrl-alt-shift-k = 'focus --boundaries-action wrap-around-the-workspace up'
+# cmd-ctrl-alt-shift-l = 'focus --boundaries-action wrap-around-the-workspace right'
+
+# 将当前工作区移动至下一个显示器
+# cmd-ctrl-alt-shift-9 = 'move-workspace-to-monitor --wrap-around next'
+
+# 您可以取消注释此行，以使用 alt + enter 快捷键打开终端
+# alt-enter = 'exec-and-forget open -n /System/Applications/Utilities/Terminal.app'
+
+
+[mode.windows.binding]
+f19 = ['reload-config', 'mode main']
+esc = ['reload-config', 'mode main']
+
+# 切换到前一个工作区
+tab = 'workspace-back-and-forth'
+
+# 切换到下一个非空工作区
+n = 'exec-and-forget aerospace list-workspaces --empty no --monitor all | aerospace workspace --wrap-around next'
+p  = 'exec-and-forget aerospace list-workspaces --empty no --monitor all | aerospace workspace --wrap-around prev'
+
+# 将当前窗口移到下一个工作区并跟随
+alt-n = 'move-node-to-workspace --wrap-around --focus-follows-window next'
+alt-p  = 'move-node-to-workspace --wrap-around --focus-follows-window prev'
+
+minus = 'layout tiles horizontal vertical'
+equal = 'layout accordion horizontal vertical'
+
+alt-minus = 'resize smart -50'
+alt-equal = 'resize smart +50'
+
+# i3 wraps focus by default
+# tab = 'focus --boundaries-action wrap-around-the-workspace right'
+# shift-tab = 'focus --boundaries-action wrap-around-the-workspace left'
+h = 'focus --boundaries-action wrap-around-the-workspace left'
+j = 'focus --boundaries-action wrap-around-the-workspace down'
+k = 'focus --boundaries-action wrap-around-the-workspace up'
+l = 'focus --boundaries-action wrap-around-the-workspace right'
+
+f = 'fullscreen'
+
+# 参见: https://nikitabobko.github.io/AeroSpace/commands#move
+alt-h = 'move left'
+alt-j = 'move down'
+alt-k = 'move up'
+alt-l = 'move right'
+
+down = 'join-with down'
+left = 'join-with left'
+up = 'join-with up'
+right = 'join-with right'
+
+# 更改工作空间
+1 = 'workspace 1'
+2 = 'workspace 2'
+3 = 'workspace 3'
+4 = 'workspace 4'
+5 = 'workspace 5'
+6 = 'workspace 6'
+a = 'workspace A' # AI
+b = 'workspace B' # browser(safari, firefox)
+d = 'workspace D' # 股票(东方财富, Tradingview, 华泰证券)
+e = 'workspace E' # Emacs
+# 跳转到 emacs 所在的 工作空间
+# e = 'exec-and-forget aerospace list-windows --monitor all --format "%{workspace}" --app-bundle-id "org.gnu.Emacs" | xargs aerospace workspace --fail-if-noop'
+g = 'workspace G' # Game
+m = 'workspace M' # Music
+i = 'workspace I' # Surge
+q = 'workspace Q' # 活动监视器
+s = 'workspace S' # Karabiner
+t = 'workspace T' # Terminal(WezTerm)
+
+# 将窗口移动到工作区
+alt-1 = 'move-node-to-workspace 1'
+alt-2 = 'move-node-to-workspace 2'
+alt-3 = 'move-node-to-workspace 3'
+alt-4 = 'move-node-to-workspace 4'
+alt-5 = 'move-node-to-workspace 5'
+alt-6 = 'move-node-to-workspace 6'
+alt-a = 'move-node-to-workspace A' # AI
+alt-b = 'move-node-to-workspace B' # browser(safari, firefox)
+alt-d = 'move-node-to-workspace D' # 股票(东方财富, Tradingview, 华泰证券)
+alt-e = 'move-node-to-workspace E' # Emacs
+# 将窗口移动到 emacs 的工作区
+# alt-e = 'exec-and-forget aerospace list-windows --monitor all --format "%{workspace}" --app-bundle-id "org.gnu.Emacs" | xargs aerospace move-node-to-workspace --fail-if-noop --focus-follows-window'
+alt-g = 'move-node-to-workspace G' # Game
+alt-m = 'move-node-to-workspace M' # Music
+alt-i = 'move-node-to-workspace I' # Surge
+alt-q = 'move-node-to-workspace Q' # 活动监视器
+alt-s = 'move-node-to-workspace S' # Karabiner
+alt-t = 'move-node-to-workspace T' # Terminal(WezTerm)
+
+
+[mode.service.binding]
+f18 = ['reload-config', 'mode main'] # 重新加载配置文件，并返回主模式。
+enter = ['flatten-workspace-tree', 'mode main'] # 重置当前工作区的布局树结构，并返回主模式。
+esc = ['layout floating tiling', 'mode main'] # 在浮动和平铺布局之间切换
+backspace = ['close-all-windows-but-current', 'mode main'] # 关闭除当前窗口外的所有窗口
+
+# minus = 'layout tiles horizontal vertical'
+# equal = 'layout accordion horizontal vertical'
+
+
+# aerospace list-apps
+# [[on-window-detected]]
+# if.app-id = 'com.openai.chat'
+# run = "move-node-to-workspace A"
+#
+# [[on-window-detected]]
+# if.app-id = 'com.anthropic.claudefordesktop'
+# run = "move-node-to-workspace A"n
+
+# [[on-window-detected]]
+# if.app-id = 'com.apple.Safari'
+# run = "move-node-to-workspace B"
+
+# [[on-window-detected]]
+# if.app-id = 'org.mozilla.firefox'
+# run = "move-node-to-workspace B"
+
+[[on-window-detected]]
+if.app-id = 'com.eastmoney.mac.expert'
+run = "move-node-to-workspace D"
+
+[[on-window-detected]]
+if.app-id = 'cn.com.htzq.macstock'
+run = "move-node-to-workspace D"
+
+[[on-window-detected]]
+if.app-id = 'com.tradingview.tradingviewapp.desktop'
+run = "move-node-to-workspace D"
+
+# [[on-window-detected]]
+# if.app-id = 'org.gnu.Emacs'
+# run = "move-node-to-workspace E"
+
+[[on-window-detected]]
+if.app-id = 'com.valvesoftware.steam'
+run = "move-node-to-workspace G"
+
+[[on-window-detected]]
+if.app-id = 'com.spotify.client'
+run = "move-node-to-workspace M"
+
+[[on-window-detected]]
+if.app-id = 'com.nssurge.surge-mac'
+run = "move-node-to-workspace I"
+
+[[on-window-detected]]
+if.app-id = 'com.nssurge.surge-dashboard'
+run = "move-node-to-workspace I"
+
+[[on-window-detected]]
+if.app-id = 'com.apple.ActivityMonitor'
+run = "move-node-to-workspace Q"
+
+[[on-window-detected]]
+if.app-id = 'org.pqrs.Karabiner-Elements.Settings'
+run = "move-node-to-workspace S"
+
+# [[on-window-detected]]
+# if.app-id = 'com.github.wez.wezterm'
+# run = "move-node-to-workspace T"
+
+# [[rules]]
+# app_id = "com.github.wez.wezterm"
+# layout = "floating"
