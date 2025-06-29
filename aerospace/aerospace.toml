@@ -42,8 +42,8 @@ key-mapping.preset = 'qwerty'
 
 # 当焦点显示器改变时，鼠标跟随焦点
 # 如果您不喜欢此行为，请从您的配置中删除它
-on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
-on-focus-changed = ['move-mouse window-lazy-center']
+# on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+# on-focus-changed = ['move-mouse window-lazy-center']
 
 # 窗口之间的间隙 (inner-*) 和显示器边缘之间的间隙 (outer-*)。
 [gaps]
@@ -95,15 +95,15 @@ f11 = 'macos-native-fullscreen'
 f19 = ['reload-config', 'mode main']
 
 # 切换到前一个工作区
-# tab = 'workspace-back-and-forth'
+tab = 'workspace-back-and-forth'
 
 # 切换到下一个非空工作区
 n = 'exec-and-forget aerospace list-workspaces --empty no --monitor all | aerospace workspace --wrap-around next'
 p  = 'exec-and-forget aerospace list-workspaces --empty no --monitor all | aerospace workspace --wrap-around prev'
 
 # 将当前窗口移到下一个工作区并跟随
-shift-0 = 'move-node-to-workspace --wrap-around --focus-follows-window next'
-shift-9  = 'move-node-to-workspace --wrap-around --focus-follows-window prev'
+alt-n = 'move-node-to-workspace --wrap-around --focus-follows-window next'
+alt-p  = 'move-node-to-workspace --wrap-around --focus-follows-window prev'
 
 # 調整佈局大小
 minus = 'resize smart -50'
@@ -115,23 +115,21 @@ b = 'layout tiles horizontal vertical'     #  來回切換 水平還是垂直佈
 q = 'layout floating tiling' # 在浮動和平鋪佈局之間切換
 
 # i3 wraps focus by default
-shift-tab = 'focus --boundaries-action wrap-around-the-workspace left'
-tab = 'focus --boundaries-action wrap-around-the-workspace right'
-# h = 'focus --boundaries-action wrap-around-the-workspace left'
-# j = 'focus --boundaries-action wrap-around-the-workspace down'
-# k = 'focus --boundaries-action wrap-around-the-workspace up'
-# l = 'focus --boundaries-action wrap-around-the-workspace right'
+h = 'focus --boundaries-action wrap-around-the-workspace left'
+j = 'focus --boundaries-action wrap-around-the-workspace down'
+k = 'focus --boundaries-action wrap-around-the-workspace up'
+l = 'focus --boundaries-action wrap-around-the-workspace right'
 
 # 参见: https://nikitabobko.github.io/AeroSpace/commands#move
-h = 'move left'
-j = 'move down'
-k = 'move up'
-l = 'move right'
+left = 'move left'
+down = 'move down'
+up = 'move up'
+right = 'move right'
 
-down = 'join-with down'
-left = 'join-with left'
-up = 'join-with up'
-right = 'join-with right'
+# down = 'join-with down'
+# left = 'join-with left'
+# up = 'join-with up'
+# right = 'join-with right'
 
 # 更改工作空间
 1 = 'workspace 1'
