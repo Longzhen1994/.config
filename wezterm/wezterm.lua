@@ -35,7 +35,7 @@ config.window_padding = {
 -- 字体设置：西文优先使用 Aporetic Sans Mono，中文使用 LXGW WenKai Mono GB
 config.font = wezterm.font_with_fallback({
   { family = "JetBrains Mono", weight = "Regular" },
-  { family = "LXGW WenKai Mono GB", weight = "Medium" },
+  { family = "LXGW WenKai Mono", weight = "Medium" },
 })
 
 -- 性能与渲染设置

@@ -51,23 +51,20 @@ if [ -f "/opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
     source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
 
-# Conda 初始化
-# 将路径修改为符合 XDG 规范的位置 ( conda 要放在这里, 不然 vterm 打不开)
-__conda_setup="$('$XDG_DATA_HOME/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/homebrew/Caskroom/miniforge/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "$XDG_DATA_HOME/miniforge3/etc/profile.d/conda.sh" ]; then
-        . "$XDG_DATA_HOME/miniforge3/etc/profile.d/conda.sh"
+    if [ -f "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh" ]; then
+        . "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh"
     else
-        export PATH="$XDG_DATA_HOME/miniforge3/bin:$PATH"
+        export PATH="/opt/homebrew/Caskroom/miniforge/base/bin:$PATH"
     fi
 fi
 unset __conda_setup
-
-if [ -f "$XDG_DATA_HOME/miniforge3/etc/profile.d/mamba.sh" ]; then
-    . "$XDG_DATA_HOME/miniforge3/etc/profile.d/mamba.sh"
-fi
+# <<< conda initialize <<<
 
 # 别名定义
 alias ..='cd ..'
@@ -80,6 +77,35 @@ alias ls='gls --color=auto --group-directories-first'
 alias la='gls -A --color=auto --group-directories-first'
 alias ll='gls -lh --color=auto --group-directories-first'
 alias lsla='gls -lhA --color=auto --group-directories-first'
+
+# alias emacsnw= 'emacs -nw --init-directory ~/.config/emacs'
+# alias cat = 'bat'
+# alias less = 'bat'
+
+# Simple prompt
+if [ -n "$SSH_CONNECTION" ]
+then
+    export PS1="\u@\h: \w \$ "
+else
+    export PS1="\w \$ "
+fi
+export PS2="> "
+
+# Enter directory and list contents
+_ls()
+{
+    gls --color=auto -lhA --group-directories-first
+}
+
+cd ()
+{
+    if [ -n "$1" ]
+    then
+        builtin cd "$@" && _ls
+    else
+        builtin cd ~ && _ls
+    fi
+}
 
 # 提示符设置
 autoload -U colors && colors
